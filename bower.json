@@ -1,8 +1,8 @@
 {
-  "name": "angular-phonecat",
-  "description": "A starter project for AngularJS",
+  "name": "media-upload",
+  "description": "Demo AngularJS app",
   "version": "0.0.0",
-  "homepage": "https://github.com/angular/angular-phonecat",
+  "homepage": "https://github.com/kousseksou/ajs-mediaupload",
   "license": "MIT",
   "private": true,
   "dependencies": {
@@ -12,6 +12,6 @@
     "angular-route": "1.5.x",
     "bootstrap": "3.3.x",
     "jquery": "2.2.x",
-	"blueimp-file-upload-node": "9.21.x"
+	  "blueimp-file-upload-node": "9.21.x"
   }
 }
