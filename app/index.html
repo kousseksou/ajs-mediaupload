@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en" ng-app="mediaUpload">
+  <head>
+    <meta charset="utf-8">
+    <title>Demo Media Upload</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="app.css" />
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+
+    <script src="bower_components/blueimp-file-upload-node/js/vendor/jquery.ui.widget.js"></script>
+    <script src="bower_components/blueimp-file-upload-node/js/jquery.iframe-transport.js"></script>
+	<script src="bower_components/blueimp-file-upload-node/js/jquery.fileupload.js"></script>
+	<script src="bower_components/blueimp-file-upload-node/js/jquery.fileupload-process.js"></script>
+	<script src="bower_components/blueimp-file-upload-node/js/jquery.fileupload-image.js"></script>
+	<script src="bower_components/blueimp-file-upload-node/js/jquery.fileupload-video.js"></script>
+	<script src="bower_components/blueimp-file-upload-node/js/jquery.fileupload-audio.js"></script>
+	<script src="bower_components/blueimp-file-upload-node/js/jquery.fileupload-validate.js"></script>
+    <script src="app.module.js"></script>
+    <script src="core/core.module.js"></script>
+    <script src="core/media/media.module.js"></script>
+    <script src="core/media/media.service.js"></script>
+    <script src="media-upload/media-upload.module.js"></script>
+    <script src="media-upload/media-upload.component.js"></script>
+  </head>
+  <body>
+
+    <div class="view-container">
+		<media-upload></media-upload>
+	</div>
+
+  </body>
+</html>

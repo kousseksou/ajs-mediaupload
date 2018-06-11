@@ -1,0 +1,33 @@
+<div class="ajs-upload-media">
+	<div class="row">
+		<div class="col-md-12">
+			<span class="btn btn-success fileinput-button">
+				<i class="glyphicon glyphicon-cloud-upload"></i>
+				<span>Upload file... {{$ctrl.testing}}</span>
+				<input class="fileupload" type="file" name="files[]" ng-click="$ctrl.fileUpload()">
+			</span>
+			<span class="btn btn-danger fileupload-cancel" ng-show="$ctrl.uploadInProgress" ng-click="$ctrl.cancelUpload()">
+				<i class="glyphicon glyphicon-remove"></i>
+				<span>Cancel</span>
+			</span>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<div id="progress" class="progress">
+				<div class="progress-bar progress-bar-success" ng-style="{'width': $ctrl.progress+'%'}">{{$ctrl.progress}}%</div>
+			</div>
+		</div>
+	</div>
+	<div class="row fileupload-embed" ng-if="!!$ctrl.hash">
+		<div class="col-md-12" ng-if="!!$ctrl.hash">
+			<script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js" async></script>
+			<div ng-class="'wistia_embed wistia_async_' + $ctrl.hash + ' videoFoam=true'" style="width:640px;height:360px;">&nbsp;</div>
+		</div>
+	</div>
+	<div class="row fileupload-error" ng-show="!$ctrl.uploadInProgress">
+		<div class="col-md-12">
+			<div class="bg-danger fileupload-error-message">{{$ctrl.error}}</div>
+		</div>
+	</div>
+</div>
